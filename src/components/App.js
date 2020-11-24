@@ -27,7 +27,7 @@ function App() {
         : 'app app_cold'
         : 'app'
     }>
-      <main className='root'>
+      <div className='root'>
         <Search
           dataCity={city}
           onAddCity={handleSearch}
@@ -44,7 +44,7 @@ function App() {
             />
           </>
          : <h1 className='text-title'>Какая погода в вашем городе?</h1> }
-      </main>
+      </div>
     </div>
   );
 }

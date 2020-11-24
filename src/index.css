@@ -6,14 +6,9 @@
   box-sizing: border-box;
 }
 
-.root {
-  font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  padding: 50px;
-}
-
 .app {
+  min-width: 320px;
+  max-width: 1440px;
   background-image: url('https://images.unsplash.com/photo-1523475961446-313f09c9a899?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1470&q=80');
   background-size: cover;
   background-position: center;
@@ -26,6 +21,13 @@
 
 .app_cold {
   background-image: url('https://images.unsplash.com/photo-1576683409292-dbc31d976ff1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+}
+
+.root {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 50px;
 }
 
 .search {
@@ -122,6 +124,18 @@
   box-sizing: border-box;
   border-radius: 100px;
   outline: none;
+}
+
+@media screen and (min-width: 397px) and (max-width: 490px) {
+  .weather__description {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .weather__description {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 475px) {
