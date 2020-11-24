@@ -1,13 +1,133 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 50px;
+}
+
+.app {
+  background-image: url('https://images.unsplash.com/photo-1523475961446-313f09c9a899?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s ease;
+}
+
+.app_warm {
+  background-image: url('https://images.unsplash.com/photo-1527251402749-0d14a4b5a735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1368&q=80');
+}
+
+.app_cold {
+  background-image: url('https://images.unsplash.com/photo-1576683409292-dbc31d976ff1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+}
+
+.search {
+  max-width: 600px;
+  margin: 0 auto 75px;
+  position: relative;
+}
+
+.search__input {
+  color: black;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.52);
+  transition: 0.4s ease;
+}
+
+.search__input:focus {
+  background-color: white;
+}
+
+.search__button {
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #e5d53f;
+  box-shadow: 0 3px 10px rgb(103, 103, 103);
+  color: #2b2b2b;
+  padding: 13px 54px;
+  border-style: none;
+}
+
+.search__button:hover {
+  background-color: #ffed47;
+  transition: .1s linear;
+}
+
+.search__button:active {
+  background-color: #d6c73b;
+  transition: .1s linear;
+}
+
+.location {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+.location__date {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.weather {
+  text-align: center;
+}
+
+.weather__temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.weather__description {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.text-title {
+  text-align: center;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.button {
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 100px;
+  outline: none;
+}
+
+@media screen and (max-width: 475px) {
+  .search__button {
+    margin-top: 15px;
+    position: static;
+    width: 100%;
+  }
 }
