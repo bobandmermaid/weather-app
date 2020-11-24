@@ -16,3 +16,9 @@
 3. `npm i` (установить пакеты)
 4. `npm run start` (сборка проекта в режиме разработки)
 5. `npm run build` (сборка проекта для развертывания)
+
+### Data Resource
++ [openweathermap](https://openweathermap.org/api)
+
+### Muse
++ [weather-app](https://dev.to/kgprajwal/learn-react-by-building-a-weather-app-3229)
