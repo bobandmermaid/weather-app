@@ -2,10 +2,6 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/bobandmermaid/weather-react?style=flat-square)
 ### О проекте
 + Приложение, которое показывает погоду для любого города или страны мира  
-
-### Функциональность:
-  + Показывает заданный город, дату
-  + Показывает температуру и текущее состояние погоды
   
 ### Стек
 `React`  
