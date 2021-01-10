@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Search from "./Search";
 import Location from "./Location";
 import Weather from "./Weather";
+import Title from "./Title";
 import api from "../utils/WeatherApi";
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
         setCity('');
       })
       .catch(err => console.log(err.message))
-
   }
 
   return (
@@ -43,7 +43,7 @@ function App() {
               weather={weather}
             />
           </>
-         : <h1 className='text-title'>Какая погода в вашем городе?</h1> }
+         : <Title /> }
       </div>
     </div>
   );
